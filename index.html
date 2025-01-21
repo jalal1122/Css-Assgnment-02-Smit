@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 02</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 1.3rem;
+      }
+      body {
+        background-color: rgb(82, 82, 82);
+      }
+      h1 {
+        font-size: 2rem;
+        padding-top: 10%;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100vw;
+        height: 100vh;
+        gap: 5vh;
+      }
+      .form {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 27vw;
+        height: 75vh;
+        border-radius: 3%;
+      }
+      input {
+        border: none;
+        border-bottom: 2px solid black;
+        outline: none;
+        background-color: none;
+      }
+      input:focus {
+        outline: none;
+        background-color: none;
+      }
+      .fpd {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .inside-form-dv {
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+        padding-top: 10%;
+      }
+      input[type="submit"] {
+        border: none;
+        background: rgb(218, 74, 246);
+        background: linear-gradient(
+          270deg,
+          rgba(218, 74, 246, 1) 0%,
+          rgba(110, 201, 222, 1) 50%
+        );
+        border-radius: 120px;
+        width: 100%;
+      }
+      .submit-input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .twitter-icon {
+        background-color: #49a3ec;
+        border-radius: 70%;
+        padding: 4px;
+      }
+      .facebook-icon {
+        font-size: 30px;
+      }
+      .icons {
+        display: flex;
+        gap: -60px;
+      }
+      svg {
+        height: 50px;
+        width: 50px;
+      }
+      .osuu {
+        padding-top: 10%;
+      }
+      .usuu1 {
+        padding-top: 5%;
+      }
+      .pass,
+      .user,
+      .fp {
+        font-size: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <h1>Login</h1>
+        <form>
+          <div class="inside-form-dv">
+            <div class="uai">
+              <label for="username" class="user">Username</label><br />
+              <i class="fa-solid fa-user"></i>
+              <input
+                type="text"
+                name="username"
+                placeholder="Type your username"
+              />
+            </div>
+            <div class="pai">
+              <label for="password" class="pas">Password</label><br />
+              <i class="fa-solid fa-lock"></i>
+              <input
+                type="password"
+                name="password"
+                placeholder="Type your password"
+              />
+            </div>
+            <div class="fpd">
+              <label class="fp">Forgot password?</label>
+            </div>
+            <div class="submit-input">
+              <input type="submit" value="LOGIN" />
+            </div>
+          </div>
+        </form>
+        <span class="usuu1">Or Sign UP Using</span>
+        <div class="icons">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="100"
+            height="100"
+            viewBox="0,0,256,256"
+          >
+            <g
+              fill="#425993"
+              fill-rule="nonzero"
+              stroke="none"
+              stroke-width="1"
+              stroke-linecap="butt"
+              stroke-linejoin="miter"
+              stroke-miterlimit="10"
+              stroke-dasharray=""
+              stroke-dashoffset="0"
+              font-family="none"
+              font-weight="none"
+              font-size="none"
+              text-anchor="none"
+              style="mix-blend-mode: normal"
+            >
+              <g transform="scale(5.12,5.12)">
+                <path
+                  d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="100"
+            height="100"
+            viewBox="0 0 48 48"
+          >
+            <path
+              fill="#03a9f4"
+              d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"
+            ></path>
+            <path
+              fill="#fff"
+              d="M36,17.12c-0.882,0.391-1.999,0.758-3,0.88c1.018-0.604,2.633-1.862,3-3 c-0.951,0.559-2.671,1.156-3.793,1.372C31.311,15.422,30.033,15,28.617,15C25.897,15,24,17.305,24,20v2c-4,0-7.9-3.047-10.327-6 c-0.427,0.721-0.667,1.565-0.667,2.457c0,1.819,1.671,3.665,2.994,4.543c-0.807-0.025-2.335-0.641-3-1c0,0.016,0,0.036,0,0.057 c0,2.367,1.661,3.974,3.912,4.422C16.501,26.592,16,27,14.072,27c0.626,1.935,3.773,2.958,5.928,3c-1.686,1.307-4.692,2-7,2 c-0.399,0-0.615,0.022-1-0.023C14.178,33.357,17.22,34,20,34c9.057,0,14-6.918,14-13.37c0-0.212-0.007-0.922-0.018-1.13 C34.95,18.818,35.342,18.104,36,17.12"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="50"
+            height="50"
+            viewBox="0 0 48 48"
+            style="fill: #fa5252"
+          >
+            <path
+              d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z M23.874,31.003 c1.537,0,2.977-0.692,4.088-1.941v-3.055h-3.5c-0.829,0-1.5-0.671-1.5-1.5s0.671-1.5,1.5-1.5h5c0.829,0,1.5,0.671,1.5,1.5v4.096 v0.904v0.012c0,0.006-0.003,0.011-0.003,0.017c-0.003,0.146-0.031,0.285-0.072,0.418c-0.061,0.224-0.153,0.438-0.304,0.621 c-0.875,1.058-3.229,3.428-6.709,3.428c-4.93,0-8.94-4.487-8.94-10.003s4.011-10.003,8.94-10.003c2.486,0,4.879,1.17,6.565,3.21 c0.128,0.154,0.252,0.315,0.372,0.48c0.425,0.584,0.467,1.404-0.008,1.946c-0.667,0.761-1.815,0.666-2.364-0.107 c-0.1-0.14-0.203-0.275-0.312-0.407c-1.132-1.369-2.642-2.122-4.254-2.122c-3.275,0-5.94,3.142-5.94,7.003 S20.599,31.003,23.874,31.003z"
+            ></path>
+          </svg>
+        </div>
+        <span class="osuu">Or sign Up Using</span>
+        <div>SIGN UP</div>
+      </div>
+    </div>
+  </body>
+</html>
